@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test'
 
 test('test', async ({ page }) => {
+    // await page.goto('https://google.com/')
     await page.goto('https://www.wikipedia.org/')
     await page.getByLabel('Search Wikipedia').click()
     await page.getByLabel('Search Wikipedia').fill('samsun')
